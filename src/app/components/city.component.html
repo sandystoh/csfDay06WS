@@ -1,0 +1,11 @@
+
+<mat-list>
+        <h3 mat-subheader>Cities</h3>
+        <mat-list-item *ngFor="let city of cities" [routerLink]="['/weather', city.id]">
+          <mat-icon mat-list-icon>location_city</mat-icon>
+          <h4 mat-line>{{city.name}}</h4>
+          <p mat-line> {{city.country}} </p>
+        </mat-list-item>
+</mat-list>
+
+{{ aroute | json}}
