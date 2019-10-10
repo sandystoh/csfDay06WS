@@ -1,5 +1,5 @@
 .fixed-bg {
-  background-image: url('/assets/images/lightning.jpg');
+  background-image: url('../assets/images/lightning.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
