@@ -11,7 +11,7 @@ import { ActivatedRoute, ActivatedRouteSnapshot, ParamMap } from '@angular/route
 export class WeatherComponent implements OnInit {
 
   cityNum: string;
-  city: any = [{'cityNum': 0,'name': '','country': '', 'imageurl':''}];
+  city: any = [{cityNum: 0, name: '', country: '', imageurl: ''}];
   model = new Weather('', 0, 0, 0, 0, 0);
 
   constructor(private weatherSvc: WeatherService, private citySvc: CityService, private activatedRoute: ActivatedRoute) { }

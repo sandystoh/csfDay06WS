@@ -33,7 +33,7 @@ export class WelcomeComponent implements OnInit {
 
     this.citySvc.getCities()
     .then(result => {
-      if ((result.find(x => x.cityNum === tempCity.cityNum)) == undefined) {
+      if ((result.find(x => x.cityNum === tempCity.cityNum)) === undefined) {
         this.citySvc.addCity(tempCity).then(() => {
           this.snackBar.open('New City ' + tempCity.name + ' Added!', 'OK', { duration: 2000});
           this.router.navigate(['/city']);

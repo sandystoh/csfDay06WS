@@ -23,7 +23,7 @@ export class CityComponent implements OnInit {
    this.citySvc.getCities()
     .then(result => {
       this.cities = result;
-      this.cities.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0)); 
+      this.cities.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
     }).catch((error) => {
       console.log(error);
     });

@@ -20,30 +20,30 @@ export class CityService {
     );
   }
 
-  getRecordByProperty(property: string, cityNum: string) : Promise<City> {
+  getRecordByProperty(property: string, cityNum: string): Promise<City> {
     return(
       this.http.get<City>(DBHOST + 'cities?' + property + '=' + cityNum).toPromise()
     );
   }
 
   addCity(city: City) {
-    return (this.http.post(DBHOST +'cities', city).toPromise());
+    return (this.http.post(DBHOST + 'cities', city).toPromise());
   }
 
   deleteCity(id) {
     console.log(id);
-    return (this.http.delete(DBHOST +'cities/'+ id).toPromise());
+    return (this.http.delete(DBHOST + 'cities/' + id).toPromise());
   }
 
   getCityList(): Promise<any> {
     // return this.http.get('./assets/data/citylist.json').toPromise();
     return(
-      this.http.get<City[]>('./assets/data/citylist.json')
+      this.http.get<any>('./assets/data/citylist.json')
     .pipe(
-        map(v => v['cities']),
+        map(v => v.cities),
         flatMap(v => v),
         map((v: any) => {
-            return (<City>{ cityNum: v.id, name: v.name, country: v.country });
+            return ({ cityNum: v.id, name: v.name, country: v.country } as City);
         }),
         toArray()
     )
