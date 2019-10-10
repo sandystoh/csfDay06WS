@@ -1,0 +1,92 @@
+{
+  "configVersion": 1,
+  "timestamp": 1570692340892,
+  "index": "/csfDay06WS/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/csfDay06WS/favicon.ico",
+        "/csfDay06WS/index.html",
+        "/csfDay06WS/main-es2015.8ce54a3ce510131b88cb.js",
+        "/csfDay06WS/main-es5.8ce54a3ce510131b88cb.js",
+        "/csfDay06WS/manifest.webmanifest",
+        "/csfDay06WS/polyfills-es2015.d3e61f0dd2b58e518eca.js",
+        "/csfDay06WS/polyfills-es5.517f1d5415025b3e9b1a.js",
+        "/csfDay06WS/runtime-es2015.b948044840398824f16e.js",
+        "/csfDay06WS/runtime-es5.b948044840398824f16e.js",
+        "/csfDay06WS/styles.7e65b976eaa9292cc53f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/csfDay06WS/assets/data/citylist.json",
+        "/csfDay06WS/assets/data/mastercitylist.json",
+        "/csfDay06WS/assets/icons/icon-128x128.png",
+        "/csfDay06WS/assets/icons/icon-144x144.png",
+        "/csfDay06WS/assets/icons/icon-152x152.png",
+        "/csfDay06WS/assets/icons/icon-192x192.png",
+        "/csfDay06WS/assets/icons/icon-384x384.png",
+        "/csfDay06WS/assets/icons/icon-512x512.png",
+        "/csfDay06WS/assets/icons/icon-72x72.png",
+        "/csfDay06WS/assets/icons/icon-96x96.png",
+        "/csfDay06WS/assets/images/city.webp",
+        "/csfDay06WS/assets/images/lightning.jpg",
+        "/csfDay06WS/assets/images/weather-background.jpg",
+        "/csfDay06WS/lightning.d0a621bc07ad1f108218.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/csfDay06WS/assets/data/citylist.json": "796f17d6c27220fd83ce30e25294b590fd282fae",
+    "/csfDay06WS/assets/data/mastercitylist.json": "1d9b2b2deaf07676e2160fb3ca3c9f4c3e2537a8",
+    "/csfDay06WS/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/csfDay06WS/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/csfDay06WS/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/csfDay06WS/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/csfDay06WS/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/csfDay06WS/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/csfDay06WS/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/csfDay06WS/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/csfDay06WS/assets/images/city.webp": "aa706ad11b2ec759d0c36a47ce9c898130df20ad",
+    "/csfDay06WS/assets/images/lightning.jpg": "ace874b1ef03587f7a6fb2b260898296bd2da789",
+    "/csfDay06WS/assets/images/weather-background.jpg": "fbf6b249fb64d54fdaeab34586384a0a150d8b74",
+    "/csfDay06WS/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/csfDay06WS/index.html": "b76ea68ed0012e8b4a991ee9033c5f5dd21f5891",
+    "/csfDay06WS/lightning.d0a621bc07ad1f108218.jpg": "ace874b1ef03587f7a6fb2b260898296bd2da789",
+    "/csfDay06WS/main-es2015.8ce54a3ce510131b88cb.js": "9c4cd91bd953788b22136a20ad8523f003753230",
+    "/csfDay06WS/main-es5.8ce54a3ce510131b88cb.js": "2a01efcc5166c6c4d300459458365c79c15bf181",
+    "/csfDay06WS/manifest.webmanifest": "4792e125ae1aca44639dcb020a70809d33773ff3",
+    "/csfDay06WS/polyfills-es2015.d3e61f0dd2b58e518eca.js": "e2f28c3743afd2899e140ad831df9675c233c02b",
+    "/csfDay06WS/polyfills-es5.517f1d5415025b3e9b1a.js": "bc55c457c97924a880c8c5bee5337b8d12a7d7d8",
+    "/csfDay06WS/runtime-es2015.b948044840398824f16e.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/csfDay06WS/runtime-es5.b948044840398824f16e.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/csfDay06WS/styles.7e65b976eaa9292cc53f.css": "dca29b16ef0189998894bdfecbb2849e3e2cb050"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
