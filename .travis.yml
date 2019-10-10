@@ -10,7 +10,7 @@ before_script:
   - npm install -g @angular/cli
 script:
   - ng lint
-  - ng build --prod --base-href https://sandystoh.github.io/csfDay06WS/
+  - ng build --prod --base-href /csfDay06WS/
 deploy:
   provider: pages
   skip_cleanup: true
