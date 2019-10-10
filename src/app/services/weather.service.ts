@@ -19,7 +19,6 @@ export class WeatherService {
   }
 
   getWeather(city: string): Promise<any> {
-    console.log('Get Weather');
     const params = new HttpParams()
     .set('q', city)
     .set('appid', environment.api_key);

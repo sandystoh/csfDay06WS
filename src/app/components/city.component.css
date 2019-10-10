@@ -1,0 +1,11 @@
+.mat-list-item {
+    cursor: pointer;
+}
+
+.add-city{
+    width: 100%;
+}
+
+.mat-list-item:hover {
+    background-color: rgb(205,0,0,0.5);
+}

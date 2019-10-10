@@ -1,0 +1,19 @@
+<form #addForm="ngForm" (ngSubmit)="AddCity(addForm)" class="full-width" fxLayout="column row" fxLayoutAlign="flex-start center" fxLayoutGap="1vh">
+<mat-form-field class="full-width">
+        <mat-label>Select City</mat-label>
+        <mat-select name="cityNum" [(ngModel)]="city.cityNum" #cityNum="ngModel" ngModel required>
+          <mat-option *ngFor="let city of cities" [(value)]="city.cityNum">
+            {{city.name}}, {{city.country}}
+          </mat-option>
+        </mat-select>
+        <mat-hint *ngIf="cityNum.invalid && addForm.touched">Please select a city</mat-hint>
+</mat-form-field>
+<mat-form-field class="full-width">
+        <input matInput placeholder="Image URL" name="imageurl" #imageurl="ngModel" ngModel required>
+        <mat-hint *ngIf="imageurl.invalid && addForm.touched">Please enter an image url</mat-hint>
+</mat-form-field>
+<div  class="full-width" fxLayout="row" fxLayoutAlign="stretch">
+<button mat-raised-button class="full-width" color="warn" (click)="Cancel(addForm)">Cancel</button>
+<button mat-raised-button class="full-width" color="accent" button type=“submit” [disabled]="addForm.invalid">Add City</button>
+</div>
+</form>

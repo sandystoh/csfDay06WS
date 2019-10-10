@@ -14,12 +14,14 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { WeatherComponent } from './components/weather.component';
 import { CityComponent } from './components/city.component';
+import { WelcomeComponent } from './components/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    CityComponent
+    CityComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

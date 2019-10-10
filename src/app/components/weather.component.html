@@ -1,9 +1,9 @@
 <div class="weather-area">
+        <button mat-raised-button color="accent" [routerLink]="['/']" >Back</button>
 <h2>{{model.cityName}}</h2>
-
+<img src={{city[0].imageurl}} class="city-image">
 <mat-card class="details">Temperature: {{model.temp - 273.15 | number}} &#176;C</mat-card>
 <mat-card class="details">Pressure: {{model.pressure}} hpa</mat-card>
 <mat-card class="details">Humidity: {{model.humidity}} %</mat-card>
 <mat-card class="details">Wind Speed: {{model.windSpeed}} m/s</mat-card>
-
 </div>

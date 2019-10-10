@@ -1,5 +1,5 @@
 .fixed-bg {
-  background-image: url('/assets/images/weather-background.jpg');
+  background-image: url('/assets/images/lightning.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -7,19 +7,25 @@
   background-size: cover;
 }
 
+.home {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
 .main {
-  height: 100vh
 }
 
 .city-list {
     background-color: rgba(255,255,255,0.5);
-    height: 90vh;
-    width: 30vw;
-    min-width: 300px;
+    height: 91vh;
+    padding-top: 64px;
     overflow-y: scroll;
     color: #fff;
-}
-
-.weather-frame {
-  width: 70vw;
 }

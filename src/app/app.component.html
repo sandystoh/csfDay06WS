@@ -1,12 +1,10 @@
 
 <div class="main fixed-bg">
-        <mat-toolbar color="accent">Weather App</mat-toolbar>
-<div fxLayout="row">
+        <mat-toolbar color="accent" class="toolbar">
+                <a class="home"  [routerLink]="['']"><mat-icon>wb_sunny</mat-icon> Weather App</a>
+        </mat-toolbar>
 <div class="city-list">
-<app-city></app-city>
-</div>
-<div class="weather-frame">
+ <router-outlet name="add"></router-outlet> 
  <router-outlet></router-outlet> 
-</div>
 </div>
 </div>

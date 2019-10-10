@@ -89,6 +89,42 @@
       "lon": 174.783325,
       "lat": -36.849998
     }
+  },
+  {
+    "id": 3369157,
+    "name": "Cape Town",
+    "country": "ZA",
+    "coord": {
+      "lon": 18.42322,
+      "lat": -33.925838
+    }
+  },
+  {
+    "id": 6453366,
+    "name": "Oslo",
+    "country": "NO",
+    "coord": {
+      "lon": 10.73367,
+      "lat": 59.911831
+    }
+  },
+  {
+    "id": 2618425,
+    "name": "Copenhagen",
+    "country": "DK",
+    "coord": {
+      "lon": 12.56553,
+      "lat": 55.675941
+    }
+  },
+  {
+    "id": 658225,
+    "name": "Helsinki",
+    "country": "FI",
+    "coord": {
+      "lon": 24.93545,
+      "lat": 60.169521
+    }
   }
 ]
 }
