@@ -1,6 +1,6 @@
 {
-  "name": "csfDay06WS",
-  "short_name": "csfDay06WS",
+  "name": "csf-weather-app",
+  "short_name": "csf-weather-app",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
