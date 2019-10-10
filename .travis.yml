@@ -1,12 +1,20 @@
 language: node_js
 node_js:
-  - '8'
+  - node
 dist: bionic
 sudo: required
-script: npm run export
+branches:
+  only:
+   - master
+before_script:
+  - npm install -g @angular/cli
+script:
+  - ng lint
+  - ng build --prod --base-href https://sandystoh.github.io/csfDay06WS/
 deploy:
-  provider: script
-  script: npm run deploy
+  provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/csfDay06WS
   on:
     branch: master
