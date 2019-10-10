@@ -11,8 +11,6 @@ export const DBHOST = 'http://localhost:3000/';
 })
 export class CityService {
 
-  
-
   constructor(private http: HttpClient) { }
 
   getCities(): Promise<any> {

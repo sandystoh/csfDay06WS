@@ -1,0 +1,26 @@
+language: node_js
+nodes_js:
+  - node_js
+
+dist: bionic
+sudo: required
+
+branches:
+  only:
+    - routing
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng lint
+  - npm run test-headless
+  - ng build --prod --base-href https://sandystoh.github.io/csf-weather-app
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/
+  on:
+    branch: master

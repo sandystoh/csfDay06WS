@@ -17,8 +17,8 @@ export class WeatherComponent implements OnInit {
   constructor(private weatherSvc: WeatherService, private citySvc: CityService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
-      this.cityNum = params.get('id');
+    // this.activatedRoute.paramMap.subscribe((params: ParamMap) => { this.cityNum = params.get('id');});
+      this.cityNum = this.activatedRoute.snapshot.params.id;
       this.weatherSvc.getWeatherById(this.cityNum.toString())
       .then(result => {
         console.log(result);
@@ -34,7 +34,6 @@ export class WeatherComponent implements OnInit {
       }).catch((error) => {
         console.log(error);
       });
-    });
   }
 
-}
+ }
